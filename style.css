@@ -1,0 +1,126 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0fdfa; /* light mint */
+  color: #1f2933;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* SECTIONS */
+section {
+  padding: 30px 15px;
+}
+
+/* HOME */
+#home {
+  background: linear-gradient(135deg, #6366f1, #14b8a6); /* purple + teal */
+  color: white;
+  padding: 50px 15px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+}
+
+#home p {
+  margin-top: 10px;
+}
+
+/* HEADINGS */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+/* SECTION HEADINGS WITH EMOJIS */
+h2::before {
+  content: "✨ ";
+}
+
+/* BUTTON */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #f472b6; /* pink */
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ec4899;
+  transform: scale(1.05);
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  border-top: 4px solid #6366f1;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 6px;
+  padding: 8px;
+  background: #ccfbf1; /* soft teal */
+  border-radius: 8px;
+}
+
+/* CONTACT */
+input, textarea {
+  width: 250px;
+  padding: 8px;
+  margin: 6px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+textarea {
+  height: 80px;
+}
+
+/* FOOTER STYLE (optional if you add later) */
+footer {
+  margin-top: 20px;
+  padding: 15px;
+  background: #6366f1;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
+}
